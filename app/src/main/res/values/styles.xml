@@ -1,0 +1,8 @@
+<resources>
+
+
+    <style name="sp_bg">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+</resources>
