@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Library</string>
+    <string name="no_network_message">网络异常，请检查网络重试</string>
+    <string name="click_refresh">点击刷新</string>
 </resources>

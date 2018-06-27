@@ -6,7 +6,11 @@
 
 
     <color name="c_g_f4">#f4f4f4</color>
-
+    <color name="purple_7243db">#7243db</color>
+    <color name="gray_d2d0d7">#d2d0d7</color>
+    <color name="purple_8759ef">#8759ef</color>
+    <color name="white_text">#fafafa</color>
+    <color name="white">#FFFFFF</color>
     <color name="c_1e">#1E90FF</color>
     <color name="c_w">#ffffffff</color>
     <color name="c_e8">#E8E8E8</color>

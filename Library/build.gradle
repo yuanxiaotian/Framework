@@ -51,6 +51,8 @@ dependencies {
     api rootProject.ext.dependencies.greendao
     api rootProject.ext.dependencies.banner
     api rootProject.ext.dependencies.fresco
+    api rootProject.ext.dependencies.fragmentation
+    api rootProject.ext.dependencies.rxpermissions
 
     //后期可选配置引入框架
     //    api rootProject.ext.dependencies.multiImageSelector

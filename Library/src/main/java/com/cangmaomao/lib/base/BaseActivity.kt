@@ -52,4 +52,6 @@ abstract class BaseActivity : AppCompatActivity() {
         }
         bt.commitAllowingStateLoss()
     }
+
+
 }

@@ -14,9 +14,7 @@ class SplashActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.a_splash)
-
         text1.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(test))) }
-
         text2.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(test2))) }
     }
 }
