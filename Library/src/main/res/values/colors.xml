@@ -6,4 +6,9 @@
 
 
     <color name="c_g_f4">#f4f4f4</color>
+
+    <color name="c_1e">#1E90FF</color>
+    <color name="c_w">#ffffffff</color>
+    <color name="c_e8">#E8E8E8</color>
+    <color name="c_t_fc">#99fcfcfc</color>
 </resources>

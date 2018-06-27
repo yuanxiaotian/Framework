@@ -3,7 +3,7 @@ FrameWork
  模块化+MVP
  
  
- # 1.  进入外部框架集合#
+ # 1.  进入外部框架集合
          constraintLayout       : "com.android.support.constraint:constraint-layout:$rootProject.constraintLayout",
          retrofit               : "com.squareup.retrofit2:retrofit:$rootProject.retrofit",
          gson                   : "com.squareup.retrofit2:converter-gson:$rootProject.gson",

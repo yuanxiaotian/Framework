@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cangmaomao.m_mine">
+
+    <application>
+        <activity android:name=".TestActivity">
+            <intent-filter>
+                <data
+                    android:host="test"
+                    android:scheme="mine" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
