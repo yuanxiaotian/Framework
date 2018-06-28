@@ -14,7 +14,7 @@ import me.yokeyword.fragmentation.ISupportFragment
 
 abstract class BaseFragment<T : BasePresenter> : BaseAppCompatFragment(), BaseView<T> {
 
-    lateinit var t: T
+    lateinit var p: T
     var mRxPermissions: RxPermissions? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +23,7 @@ abstract class BaseFragment<T : BasePresenter> : BaseAppCompatFragment(), BaseVi
     }
 
     override fun setPresenter(presenter: T) {
-        t = presenter
+        p = presenter
     }
 
     override fun onCreateView(inflater: LayoutInflater,  container: ViewGroup?, savedInstanceState: Bundle?): View? {

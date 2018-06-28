@@ -1,20 +1,30 @@
 package com.xuliucar.car.ui.activity
 
-import android.app.Activity
-import android.content.Intent
-import android.net.Uri
-import android.os.Bundle
-import com.cangmaomao.lib.action.test
-import com.cangmaomao.lib.action.test2
+import com.cangmaomao.lib.action.f_testa
+import com.cangmaomao.lib.action.f_testb
+import com.cangmaomao.lib.action.f_testc
+import com.cangmaomao.lib.base.BaseActivity
+import com.cangmaomao.m_mine.TestFragment
 import com.xuliucar.car.R
-import kotlinx.android.synthetic.main.a_splash.*
 
-class SplashActivity : Activity() {
+class SplashActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_splash)
-        text1.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(test))) }
-        text2.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(test2))) }
+    override fun layViewId(): Int {
+        return R.layout.a_splash
     }
+
+    override fun addViewId(): Int {
+        return R.id.frameLayout
+    }
+
+    override fun initView() {
+        val flag = intent.getIntExtra("flag", 0);
+        when (flag) {
+            f_testa -> addFragment(TestFragment())
+            f_testb -> addFragment(TestFragment())
+            f_testc -> addFragment(TestFragment())
+        }
+    }
+
+
 }

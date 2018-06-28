@@ -2,7 +2,7 @@
     package="com.cangmaomao.m_other">
 
     <application>
-        <activity android:name=".TestActivity2">
+        <activity android:name=".TestFragment2">
             <intent-filter>
                 <data
                     android:host="test2"

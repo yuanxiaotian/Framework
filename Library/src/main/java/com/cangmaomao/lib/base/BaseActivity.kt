@@ -4,8 +4,11 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.toolbar_view.*
+import me.yokeyword.fragmentation.SupportActivity
 
-abstract class BaseActivity : AppCompatActivity() {
+abstract class BaseActivity<T : BasePresenter> : SupportActivity() {
+
+    lateinit var p: T
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,16 +1,16 @@
-package com.cangmaomao.m_mine
+package com.cangmaomao.m_other
 
 import android.content.Intent
 import android.net.Uri
 import com.cangmaomao.lib.action.test
-import com.cangmaomao.lib.action.test2
 import com.cangmaomao.lib.base.BaseActivity
-import kotlinx.android.synthetic.main.test.*
+import kotlinx.android.synthetic.main.test_v.*
 
-class TestActivity : BaseActivity() {
+class TestFragment2 : BaseActivity() {
+
 
     override fun layViewId(): Int {
-        return R.layout.test
+        return R.layout.test_v
     }
 
     override fun addViewId(): Int {
@@ -18,8 +18,8 @@ class TestActivity : BaseActivity() {
     }
 
     override fun initView() {
-
-        text3.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(test2))) }
+        text4.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(test))) }
     }
+
 
 }

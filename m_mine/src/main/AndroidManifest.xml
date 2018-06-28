@@ -2,7 +2,7 @@
     package="com.cangmaomao.m_mine">
 
     <application>
-        <activity android:name=".TestActivity">
+        <activity android:name=".TestFragment">
             <intent-filter>
                 <data
                     android:host="test"
